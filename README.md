@@ -1,10 +1,8 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
 
-
-
+### Name : Rithika M
+### Register Number:212224220081
+### Date of experiment :28-01-2026
 
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
@@ -77,26 +75,71 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+```
+org 100h
 
+MOV AX,4D33H;
+MOV BX,0A211H;
+ADD AX,BX;
+MOV [5000H],AX;
 
+MOV AX,3452H;
+MOV CX,1234H;
+SUB AX,CX; 
+MOV [5002H],AX;
+  
+MOV AX,4567H;
+MOV BX,2345H;
+MUL BX;
+MOV [5004H],AX;
+
+MOV AX,2367H;
+MOV CX,2345H;
+DIV CX;
+MOV [5006H],AX;
+ret
+```
 
 ## Output  
+
+<img width="1919" height="1138" alt="Screenshot 2026-01-28 083754" src="https://github.com/user-attachments/assets/dbfb5992-4b4f-457b-8c15-3ce18637307b" />
+
+
+## Program for Logical operation:
+
+```
+org 100h
+
+MOV AX,2345H;
+MOV BX,2134H;
+AND AX,BX;
+MOV [4000H],AX;  
  
-## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
- ## Output  
+NOT AX;
+MOV [4002H],AX;
+
+MOV AX,2345H;   
+OR AX,BX;
+MOV [4004H],AX;  
+
+NOT AX;
+MOV [4006H],AX;
+
+MOV AX,2345H;
+NOT AX;
+MOV [4008H],AX;
 
 
-## Division alp 
+ret
+```
 
-## Output  
+## Output
+
+<img width="1911" height="1146" alt="image" src="https://github.com/user-attachments/assets/2a7879b2-0d5a-45bc-b9ac-84afdec64089" />
 
 
 ## Result :
- 
+ Thus, the program was successfully excuted
 
 
 
